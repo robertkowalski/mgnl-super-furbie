@@ -1,7 +1,7 @@
 {
-  "name": "mgnl-super-furbie",
+  "name": "example-light-project-webpack",
   "version": "0.0.1",
-  "description": "no dependencies, no cry",
+  "description": "Webpack based Light Project build",
   "main": "index.js",
   "private": true,
   "scripts": {
