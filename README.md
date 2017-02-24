@@ -1,5 +1,15 @@
-# super furbie!
+# example-light-project-webpack
 
- - package.json dependencies are solely reserved for light-modules
- - deps must have a valid index entry point, even if just an empty file
- - style loading annoying but not unusual, maybe convention on filename (e.g. style.css?)
+A light project building two light modules with webpack.
+
+Takes the dependency list and copies the yaml and ftl files.
+
+JS/CSS for the build must be imported in _dev/app.js
+
+
+**Build the Light project:**
+
+```
+npm install
+npm run build
+```
