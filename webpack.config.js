@@ -16,8 +16,8 @@ const LIGHT_MODULE_FOLDERS = [
 
 // constructs:
 //  [
-//      {from: 'node_modules/mgnl-custom/dialogs', to: 'mgnl-super-furbie/mgnl-custom/dialogs'}]
-//      {from: 'node_modules/mgnl-custom/templates', to: 'mgnl-super-furbie/mgnl-custom/templates'}]
+//      {from: 'node_modules/mgnl-custom/dialogs', to: 'mgnl-custom/dialogs'}]
+//      {from: 'node_modules/mgnl-custom/templates', to: 'mgnl-custom/templates'}]
 //      ...
 function getFolderPerLightModule (lm) {
   return LIGHT_MODULE_FOLDERS.map((el) => {
@@ -43,8 +43,8 @@ module.exports = {
   entry: './_dev/app.js',
 
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist', pkg.name)
+    filename: pkg.name + '/bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
 
   plugins: [
